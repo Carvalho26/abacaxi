@@ -1,0 +1,42 @@
+:root{
+    --fundo:;
+    --cartao-frente:;
+    --cartao-verso:;
+    --branco:;
+    --preto:;
+    --destaque:;
+}
+
+body{
+    background-color: var(--fundo);
+    margin: 0;
+}
+
+footer{
+    background-color: var(--preto);
+    color: var(--branco);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.cartao{
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+    margin: 1rem;
+}
+
+.cartao-conteudo{
+    background-color: var(--cartao-frente);
+    color:var(--branco);
+    text-align: center;
+}
